@@ -1,0 +1,154 @@
+{
+  "dive_id": "ba24f828-c831-4b6a-9add-280c966ce798",
+  "device": {
+    "brand": "Suunto",
+    "model": "Unknown"
+  },
+  "location": {
+    "site": "Blue Hole",
+    "gps": {
+      "lat": 36.0551,
+      "lon": 14.1906
+    }
+  },
+  "summary": {
+    "max_depth_m": 31.5,
+    "water_temp_c": 18.0,
+    "avg_depth_m": null,
+    "bottom_time_s": null,
+    "total_time_s": null
+  },
+  "profile": {
+    "interval_s": 5,
+    "samples": [
+      {
+        "t": 0.0,
+        "depth_m": 0.0,
+        "temp_c": 18.0,
+        "ndl": null,
+        "ascent_rate_mpm": null
+      },
+      {
+        "t": 5.0,
+        "depth_m": 3.0,
+        "temp_c": 18.0,
+        "ndl": null,
+        "ascent_rate_mpm": null
+      },
+      {
+        "t": 10.0,
+        "depth_m": 7.0,
+        "temp_c": 18.0,
+        "ndl": null,
+        "ascent_rate_mpm": null
+      },
+      {
+        "t": 15.0,
+        "depth_m": 12.0,
+        "temp_c": 18.0,
+        "ndl": null,
+        "ascent_rate_mpm": null
+      },
+      {
+        "t": 20.0,
+        "depth_m": 18.0,
+        "temp_c": 18.0,
+        "ndl": null,
+        "ascent_rate_mpm": null
+      },
+      {
+        "t": 25.0,
+        "depth_m": 24.0,
+        "temp_c": 18.0,
+        "ndl": null,
+        "ascent_rate_mpm": null
+      },
+      {
+        "t": 30.0,
+        "depth_m": 30.0,
+        "temp_c": 18.0,
+        "ndl": null,
+        "ascent_rate_mpm": null
+      },
+      {
+        "t": 35.0,
+        "depth_m": 31.5,
+        "temp_c": 18.0,
+        "ndl": null,
+        "ascent_rate_mpm": null
+      },
+      {
+        "t": 300.0,
+        "depth_m": 31.5,
+        "temp_c": 18.0,
+        "ndl": null,
+        "ascent_rate_mpm": null
+      },
+      {
+        "t": 305.0,
+        "depth_m": 31.8,
+        "temp_c": 18.0,
+        "ndl": null,
+        "ascent_rate_mpm": null
+      },
+      {
+        "t": 310.0,
+        "depth_m": 31.6,
+        "temp_c": 18.0,
+        "ndl": null,
+        "ascent_rate_mpm": null
+      },
+      {
+        "t": 2100.0,
+        "depth_m": 20.0,
+        "temp_c": 18.0,
+        "ndl": null,
+        "ascent_rate_mpm": null
+      },
+      {
+        "t": 2105.0,
+        "depth_m": 15.0,
+        "temp_c": 18.0,
+        "ndl": null,
+        "ascent_rate_mpm": null
+      },
+      {
+        "t": 2110.0,
+        "depth_m": 10.0,
+        "temp_c": 18.0,
+        "ndl": null,
+        "ascent_rate_mpm": null
+      },
+      {
+        "t": 2115.0,
+        "depth_m": 6.0,
+        "temp_c": 18.0,
+        "ndl": null,
+        "ascent_rate_mpm": null
+      },
+      {
+        "t": 2220.0,
+        "depth_m": 5.0,
+        "temp_c": 18.0,
+        "ndl": null,
+        "ascent_rate_mpm": null
+      },
+      {
+        "t": 2225.0,
+        "depth_m": 5.0,
+        "temp_c": 18.0,
+        "ndl": null,
+        "ascent_rate_mpm": null
+      },
+      {
+        "t": 3240.0,
+        "depth_m": 0.0,
+        "temp_c": 18.0,
+        "ndl": null,
+        "ascent_rate_mpm": null
+      }
+    ]
+  },
+  "timestamp_start": "2026-05-12T10:15:00Z",
+  "timestamp_end": "2026-05-12T10:15:00Z"
+}

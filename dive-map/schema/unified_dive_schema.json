@@ -1,0 +1,77 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "UnifiedDiveSchema",
+  "type": "object",
+
+  "properties": {
+    "dive_id": { "type": "string" },
+    "user_id": { "type": "string" },
+
+    "device": {
+      "type": "object",
+      "properties": {
+        "brand": { "type": "string" },
+        "model": { "type": "string" },
+        "serial": { "type": "string" },
+        "firmware": { "type": "string" }
+      },
+      "required": ["brand", "model"]
+    },
+
+    "timestamp_start": { "type": "string", "format": "date-time" },
+    "timestamp_end": { "type": "string", "format": "date-time" },
+
+    "location": {
+      "type": "object",
+      "properties": {
+        "country": { "type": "string" },
+        "region": { "type": "string" },
+        "site": { "type": "string" },
+        "gps": {
+          "type": "object",
+          "properties": {
+            "lat": { "type": "number" },
+            "lon": { "type": "number" }
+          },
+          "required": ["lat", "lon"]
+        }
+      },
+      "required": ["site", "gps"]
+    },
+
+    "summary": {
+      "type": "object",
+      "properties": {
+        "max_depth_m": { "type": "number" },
+        "avg_depth_m": { "type": "number" },
+        "bottom_time_s": { "type": "number" },
+        "total_time_s": { "type": "number" },
+        "water_temp_c": { "type": "number" }
+      }
+    },
+
+    "profile": {
+      "type": "object",
+      "properties": {
+        "interval_s": { "type": "number" },
+        "samples": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "t": { "type": "number" },
+              "depth_m": { "type": "number" },
+              "temp_c": { "type": "number" },
+              "ndl": { "type": ["number", "null"] },
+              "ascent_rate_mpm": { "type": ["number", "null"] }
+            },
+            "required": ["t", "depth_m", "temp_c"]
+          }
+        }
+      },
+      "required": ["interval_s", "samples"]
+    }
+  },
+
+  "required": ["dive_id", "timestamp_start", "timestamp_end", "location", "summary", "profile"]
+}

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DiveLog xmlns="http://www.suunto.com/dm5">
+  <Dive>
+    <Number>1</Number>
+    <Date>2026-05-12</Date>
+    <Time>10:15:00</Time>
+    <Location>Gozo, Malta</Location>
+    <Site>Blue Hole</Site>
+    <GPS>
+      <Latitude>36.0551</Latitude>
+      <Longitude>14.1906</Longitude>
+    </GPS>
+    <MaxDepth unit="m">31.5</MaxDepth>
+    <BottomTime unit="min">41</BottomTime>
+    <TotalTime unit="min">54</TotalTime>
+    <WaterTemperature unit="C">18</WaterTemperature>
+
+    <Profile>
+      <SampleInterval unit="s">5</SampleInterval>
+
+      <!-- Descent -->
+      <Sample>
+        <TimeOffset unit="s">0</TimeOffset>
+        <Depth unit="m">0.0</Depth>
+        <Temperature unit="C">18.0</Temperature>
+      </Sample>
+      <Sample>
+        <TimeOffset unit="s">5</TimeOffset>
+        <Depth unit="m">3.0</Depth>
+        <Temperature unit="C">18.0</Temperature>
+      </Sample>
+      <Sample>
+        <TimeOffset unit="s">10</TimeOffset>
+        <Depth unit="m">7.0</Depth>
+        <Temperature unit="C">18.0</Temperature>
+      </Sample>
+      <Sample>
+        <TimeOffset unit="s">15</TimeOffset>
+        <Depth unit="m">12.0</Depth>
+        <Temperature unit="C">18.0</Temperature>
+      </Sample>
+      <Sample>
+        <TimeOffset unit="s">20</TimeOffset>
+        <Depth unit="m">18.0</Depth>
+        <Temperature unit="C">18.0</Temperature>
+      </Sample>
+      <Sample>
+        <TimeOffset unit="s">25</TimeOffset>
+        <Depth unit="m">24.0</Depth>
+        <Temperature unit="C">18.0</Temperature>
+      </Sample>
+      <Sample>
+        <TimeOffset unit="s">30</TimeOffset>
+        <Depth unit="m">30.0</Depth>
+        <Temperature unit="C">18.0</Temperature>
+      </Sample>
+      <Sample>
+        <TimeOffset unit="s">35</TimeOffset>
+        <Depth unit="m">31.5</Depth>
+        <Temperature unit="C">18.0</Temperature>
+      </Sample>
+
+      <!-- Bottom phase -->
+      <Sample>
+        <TimeOffset unit="s">300</TimeOffset>
+        <Depth unit="m">31.5</Depth>
+        <Temperature unit="C">18.0</Temperature>
+      </Sample>
+      <Sample>
+        <TimeOffset unit="s">305</TimeOffset>
+        <Depth unit="m">31.8</Depth>
+        <Temperature unit="C">18.0</Temperature>
+      </Sample>
+      <Sample>
+        <TimeOffset unit="s">310</TimeOffset>
+        <Depth unit="m">31.6</Depth>
+        <Temperature unit="C">18.0</Temperature>
+      </Sample>
+
+      <!-- Ascent -->
+      <Sample>
+        <TimeOffset unit="s">2100</TimeOffset>
+        <Depth unit="m">20.0</Depth>
+        <Temperature unit="C">18.0</Temperature>
+      </Sample>
+      <Sample>
+        <TimeOffset unit="s">2105</TimeOffset>
+        <Depth unit="m">15.0</Depth>
+        <Temperature unit="C">18.0</Temperature>
+      </Sample>
+      <Sample>
+        <TimeOffset unit="s">2110</TimeOffset>
+        <Depth unit="m">10.0</Depth>
+        <Temperature unit="C">18.0</Temperature>
+      </Sample>
+      <Sample>
+        <TimeOffset unit="s">2115</TimeOffset>
+        <Depth unit="m">6.0</Depth>
+        <Temperature unit="C">18.0</Temperature>
+      </Sample>
+
+      <!-- Safety stop -->
+      <Sample>
+        <TimeOffset unit="s">2220</TimeOffset>
+        <Depth unit="m">5.0</Depth>
+        <Temperature unit="C">18.0</Temperature>
+      </Sample>
+      <Sample>
+        <TimeOffset unit="s">2225</TimeOffset>
+        <Depth unit="m">5.0</Depth>
+        <Temperature unit="C">18.0</Temperature>
+      </Sample>
+
+      <!-- End -->
+      <Sample>
+        <TimeOffset unit="s">3240</TimeOffset>
+        <Depth unit="m">0.0</Depth>
+        <Temperature unit="C">18.0</Temperature>
+      </Sample>
+    </Profile>
+  </Dive>
+</DiveLog>

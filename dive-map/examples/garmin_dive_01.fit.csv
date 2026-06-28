@@ -1,0 +1,43 @@
+# garmin_dive_01.fit.csv
+# Device: Garmin Descent Mk2 (simulated)
+# Sampling: 5-second intervals
+
+FileId,Type,Manufacturer,Product,SerialNumber,TimeCreated
+FileId,dive,garmin,Descent Mk2,123456789,2026-05-12T10:15:00Z
+
+DeviceInfo,Timestamp,BatteryStatus,FirmwareVersion
+DeviceInfo,2026-05-12T10:15:00Z,OK,7.10
+
+DiveSummary,Timestamp,StartTime,EndTime,MaxDepth,AvgDepth,BottomTime,TotalTime,WaterTemperature,SurfaceInterval,Location,DiveSite,GPSLat,GPSLong
+DiveSummary,2026-05-12T11:09:00Z,2026-05-12T10:15:00Z,2026-05-12T11:09:00Z,32.0,18.5,2460,3240,18.0,0,Gozo,Blue Hole,36.0551,14.1906
+
+Record,Timestamp,Depth,Temperature,AscentRate,NDL
+Record,2026-05-12T10:15:00Z,0.0,18.0,0.0,99
+Record,2026-05-12T10:15:05Z,3.0,18.0,0.0,99
+Record,2026-05-12T10:15:10Z,7.0,18.0,0.0,99
+Record,2026-05-12T10:15:15Z,12.0,18.0,0.0,99
+Record,2026-05-12T10:15:20Z,18.0,18.0,0.0,99
+Record,2026-05-12T10:15:25Z,24.0,18.0,0.0,99
+Record,2026-05-12T10:15:30Z,30.0,18.0,0.0,99
+Record,2026-05-12T10:15:35Z,32.0,18.0,0.0,99
+
+# Bottom phase (holding near max depth)
+Record,2026-05-12T10:20:00Z,31.5,18.0,0.0,40
+Record,2026-05-12T10:20:05Z,31.8,18.0,0.0,39
+Record,2026-05-12T10:20:10Z,31.6,18.0,0.0,38
+Record,2026-05-12T10:20:15Z,31.4,18.0,0.0,37
+
+# Ascent phase
+Record,2026-05-12T10:50:00Z,20.0,18.0,-9.0,15
+Record,2026-05-12T10:50:05Z,15.0,18.0,-10.0,14
+Record,2026-05-12T10:50:10Z,10.0,18.0,-10.0,13
+Record,2026-05-12T10:50:15Z,6.0,18.0,-8.0,12
+Record,2026-05-12T10:50:20Z,5.0,18.0,-6.0,12
+
+# Safety stop
+Record,2026-05-12T10:52:00Z,5.0,18.0,0.0,10
+Record,2026-05-12T10:52:05Z,5.0,18.0,0.0,9
+Record,2026-05-12T10:52:10Z,5.0,18.0,0.0,8
+
+# End of dive
+Record,2026-05-12T11:09:00Z,0.0,18.0,0.0,0

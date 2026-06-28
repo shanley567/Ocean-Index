@@ -1,0 +1,175 @@
+{
+  "dive_id": "62b42c09-1fdc-4018-9ace-2587958438ac",
+  "device": {
+    "brand": "Garmin",
+    "model": "Descent Mk2"
+  },
+  "location": {
+    "site": "Blue Hole",
+    "gps": {
+      "lat": 36.0551,
+      "lon": 14.1906
+    }
+  },
+  "summary": {
+    "max_depth_m": 32.0,
+    "avg_depth_m": 18.5,
+    "bottom_time_s": 2460.0,
+    "total_time_s": 3240.0,
+    "water_temp_c": 18.0
+  },
+  "profile": {
+    "interval_s": 5,
+    "samples": [
+      {
+        "t": 0,
+        "depth_m": 0.0,
+        "temp_c": 18.0,
+        "ascent_rate_mpm": 0.0,
+        "ndl": 99.0
+      },
+      {
+        "t": 5,
+        "depth_m": 3.0,
+        "temp_c": 18.0,
+        "ascent_rate_mpm": 0.0,
+        "ndl": 99.0
+      },
+      {
+        "t": 10,
+        "depth_m": 7.0,
+        "temp_c": 18.0,
+        "ascent_rate_mpm": 0.0,
+        "ndl": 99.0
+      },
+      {
+        "t": 15,
+        "depth_m": 12.0,
+        "temp_c": 18.0,
+        "ascent_rate_mpm": 0.0,
+        "ndl": 99.0
+      },
+      {
+        "t": 20,
+        "depth_m": 18.0,
+        "temp_c": 18.0,
+        "ascent_rate_mpm": 0.0,
+        "ndl": 99.0
+      },
+      {
+        "t": 25,
+        "depth_m": 24.0,
+        "temp_c": 18.0,
+        "ascent_rate_mpm": 0.0,
+        "ndl": 99.0
+      },
+      {
+        "t": 30,
+        "depth_m": 30.0,
+        "temp_c": 18.0,
+        "ascent_rate_mpm": 0.0,
+        "ndl": 99.0
+      },
+      {
+        "t": 35,
+        "depth_m": 32.0,
+        "temp_c": 18.0,
+        "ascent_rate_mpm": 0.0,
+        "ndl": 99.0
+      },
+      {
+        "t": 40,
+        "depth_m": 31.5,
+        "temp_c": 18.0,
+        "ascent_rate_mpm": 0.0,
+        "ndl": 40.0
+      },
+      {
+        "t": 45,
+        "depth_m": 31.8,
+        "temp_c": 18.0,
+        "ascent_rate_mpm": 0.0,
+        "ndl": 39.0
+      },
+      {
+        "t": 50,
+        "depth_m": 31.6,
+        "temp_c": 18.0,
+        "ascent_rate_mpm": 0.0,
+        "ndl": 38.0
+      },
+      {
+        "t": 55,
+        "depth_m": 31.4,
+        "temp_c": 18.0,
+        "ascent_rate_mpm": 0.0,
+        "ndl": 37.0
+      },
+      {
+        "t": 60,
+        "depth_m": 20.0,
+        "temp_c": 18.0,
+        "ascent_rate_mpm": -9.0,
+        "ndl": 15.0
+      },
+      {
+        "t": 65,
+        "depth_m": 15.0,
+        "temp_c": 18.0,
+        "ascent_rate_mpm": -10.0,
+        "ndl": 14.0
+      },
+      {
+        "t": 70,
+        "depth_m": 10.0,
+        "temp_c": 18.0,
+        "ascent_rate_mpm": -10.0,
+        "ndl": 13.0
+      },
+      {
+        "t": 75,
+        "depth_m": 6.0,
+        "temp_c": 18.0,
+        "ascent_rate_mpm": -8.0,
+        "ndl": 12.0
+      },
+      {
+        "t": 80,
+        "depth_m": 5.0,
+        "temp_c": 18.0,
+        "ascent_rate_mpm": -6.0,
+        "ndl": 12.0
+      },
+      {
+        "t": 85,
+        "depth_m": 5.0,
+        "temp_c": 18.0,
+        "ascent_rate_mpm": 0.0,
+        "ndl": 10.0
+      },
+      {
+        "t": 90,
+        "depth_m": 5.0,
+        "temp_c": 18.0,
+        "ascent_rate_mpm": 0.0,
+        "ndl": 9.0
+      },
+      {
+        "t": 95,
+        "depth_m": 5.0,
+        "temp_c": 18.0,
+        "ascent_rate_mpm": 0.0,
+        "ndl": 8.0
+      },
+      {
+        "t": 100,
+        "depth_m": 0.0,
+        "temp_c": 18.0,
+        "ascent_rate_mpm": 0.0,
+        "ndl": 0.0
+      }
+    ]
+  },
+  "timestamp_start": "2026-05-12T10:15:00Z",
+  "timestamp_end": "2026-05-12T11:09:00Z"
+}
