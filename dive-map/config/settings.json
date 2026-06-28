@@ -1,0 +1,7 @@
+{
+  "db_name": "ocean_index",
+  "db_user": "postgres",
+  "db_pass": "postgres",
+  "db_host": "localhost",
+  "db_port": 5432
+}
