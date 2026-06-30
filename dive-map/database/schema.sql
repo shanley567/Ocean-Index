@@ -1,25 +1,35 @@
-CREATE TABLE dives (
-    id UUID PRIMARY KEY,
-    user_id UUID,
-    device_brand TEXT,
-    device_model TEXT,
-    timestamp_start TIMESTAMPTZ,
-    timestamp_end TIMESTAMPTZ,
-    site TEXT,
-    gps GEOGRAPHY(POINT),
-    max_depth_m FLOAT,
-    avg_depth_m FLOAT,
-    bottom_time_s INT,
-    total_time_s INT,
-    water_temp_c FLOAT
+-- schema/schema.sql
+
+-- Enable UUID generation
+CREATE EXTENSION IF NOT EXISTS "pgcrypto";
+
+-- Main dives table
+CREATE TABLE IF NOT EXISTS dives (
+    id UUID DEFAULT gen_random_uuid() PRIMARY KEY,  -- project-unique dive_id
+    device_dive_id TEXT,                            -- ID from device/file (optional)
+    device JSONB,                                   -- device metadata (brand, model, etc.)
+    location JSONB,                                 -- site + GPS
+    summary JSONB,                                  -- max depth, avg depth, times, etc.
+    timestamp_start TIMESTAMPTZ NOT NULL,
+    timestamp_end TIMESTAMPTZ NOT NULL,
+    created_at TIMESTAMPTZ DEFAULT NOW()
 );
 
-CREATE TABLE dive_profile (
-    id SERIAL PRIMARY KEY,
-    dive_id UUID REFERENCES dives(id) ON DELETE CASCADE,
-    t INT,
-    depth_m FLOAT,
-    temp_c FLOAT,
-    ndl FLOAT,
-    ascent_rate_mpm FLOAT
+-- Optional: prevent exact duplicate device_dive_id + timestamp_start
+CREATE UNIQUE INDEX IF NOT EXISTS dives_device_unique
+    ON dives (device_dive_id, timestamp_start)
+    WHERE device_dive_id IS NOT NULL;
+
+-- Samples table (per-interval profile)
+CREATE TABLE IF NOT EXISTS dive_samples (
+    id UUID DEFAULT gen_random_uuid() PRIMARY KEY,
+    dive_id UUID NOT NULL REFERENCES dives(id) ON DELETE CASCADE,
+    timestamp TIMESTAMPTZ NOT NULL,
+    depth NUMERIC NOT NULL,
+    temperature NUMERIC,
+    device_sample_index INTEGER,
+    raw JSONB
 );
+
+CREATE INDEX IF NOT EXISTS dive_samples_dive_id_idx
+    ON dive_samples (dive_id, timestamp);
